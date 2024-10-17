@@ -17,17 +17,11 @@ public class WeatherService {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
-    /**
-     * Fetch weather data for a specific city using OpenWeatherMap's 2.5/weather API.
-     * @param city The name of the city (e.g., "London,uk").
-     * @return String containing the JSON weather data.
-     */
     public String getWeatherForCity(String city) {
         String url = apiUrl
                 .replace("{city}", city)
                 .replace("{key}", apiKey);
         
-        // Fetch the weather data from the API
         return restTemplate.getForObject(url, String.class);
     }
 }
