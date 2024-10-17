@@ -11,8 +11,7 @@ public class DailySummary {
 
     public void update(double temp, String condition) {
         temperatures.add(temp);
-        // Logic to track the dominant condition
-        conditionCount++;  // Simplified: just counting occurrences for now
+        conditionCount++; 
         dominantCondition = condition;
     }
 
