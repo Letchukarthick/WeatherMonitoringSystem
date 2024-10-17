@@ -21,7 +21,7 @@ This project is a real-time weather monitoring system that retrieves weather dat
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/weather-monitoring-system.git
+   git clone https://github.com/khanshaif9102/weather-monitoring-system.git
    ```
 2. Get your OpenWeatherMap API key:
    - Sign up at OpenWeatherMap to get your free API key.
