@@ -15,11 +15,6 @@ public class WeatherController {
     @Autowired
     private WeatherService weatherService;
 
-    /**
-     * API endpoint to get weather data for a given city.
-     * @param city Name of the city (e.g., "London,uk").
-     * @return Weather data JSON response.
-     */
     @GetMapping("/api/weather")
     public String getWeather(@RequestParam String city) {
         return weatherService.getWeatherForCity(city);
