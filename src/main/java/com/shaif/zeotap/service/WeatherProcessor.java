@@ -21,9 +21,6 @@ public class WeatherProcessor {
         double temp = rootNode.path("main").path("temp").asDouble();
         long timestamp = rootNode.path("dt").asLong();
 
-        // Convert the Unix timestamp to a human-readable date (optional)
-
-        // Process the weather data and store it in a daily summary
         updateDailySummary(city, temp, mainCondition);
     }
 
