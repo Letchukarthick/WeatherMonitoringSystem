@@ -12,7 +12,7 @@ This project is a real-time weather monitoring system that retrieves weather dat
 
 ## Technologies Used
 - **Java 17**
-- **Spring Boot 3.3.4**
+- **Spring Boot 2.3.4**
 - **OpenWeatherMap API**
 - **RestTemplate** for making HTTP requests
 - **Spring Scheduling** (for future features)
@@ -21,7 +21,7 @@ This project is a real-time weather monitoring system that retrieves weather dat
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/khanshaif9102/weather-monitoring-system.git
+   git clone https://github.com/Letchukarthick/WeatherMonitoringSystem.git
    ```
 2. Get your OpenWeatherMap API key:
    - Sign up at OpenWeatherMap to get your free API key.
@@ -39,44 +39,10 @@ This project is a real-time weather monitoring system that retrieves weather dat
 # API Endpoints
 ## Get Weather by City:
 - GET /api/weather?city={city_name}
-- Example: /api/weather?city=London,uk
+- Example: http://localhost:8080/api/weather?city=Mumbai
 - Response: Current weather data for the specified city.
 
 # Example API Response
 ```
-{
-  "coord": {
-    "lon": -0.1257,
-    "lat": 51.5085
-  },
-  "weather": [
-    {
-      "id": 500,
-      "main": "Rain",
-      "description": "light rain",
-      "icon": "10d"
-    }
-  ],
-  "main": {
-    "temp": 280.32,
-    "feels_like": 278.34,
-    "temp_min": 279.15,
-    "temp_max": 281.15,
-    "pressure": 1012,
-    "humidity": 81
-  },
-  "wind": {
-    "speed": 4.12,
-    "deg": 240
-  },
-  "clouds": {
-    "all": 90
-  },
-  "name": "London",
-  "cod": 200
-}
-```
+{"coord":{"lon":72.8479,"lat":19.0144},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50n"}],"base":"stations","main":{"temp":300.14,"feels_like":301.59,"temp_min":300.14,"temp_max":300.14,"pressure":1010,"humidity":65,"sea_level":1010,"grnd_level":1009},"visibility":2500,"wind":{"speed":2.57,"deg":110},"clouds":{"all":20},"dt":1729890467,"sys":{"type":1,"id":9052,"country":"IN","sunrise":1729904783,"sunset":1729946309},"timezone":19800,"id":1275339,"name":"Mumbai","cod":200}```
 
-# Future Improvements
-- Add weather alerts for specific thresholds (e.g., temperature over 35°C).
-- Store historical weather data for trend analysis.
